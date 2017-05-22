@@ -1,0 +1,96 @@
+@charset "utf-8";
+/*Definition value {*/
+@font-family-base:"Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-size-base:14px;
+@bg-base:#fff;
+@bg-base-darker:#f5f5f5;
+@btn-bg-base:#ef2b2c;
+@btn-bg-dis:#b3c7cd;
+
+
+
+
+/*} Definition value */
+
+/*Cover bootstrap's style {*/
+body,input,textarea,select,option,button{font-family:@font-family-base; font-size:@font-size-base;}
+body{background-color:@bg-base-darker;}
+.navbar,.index-box{background-color:@bg-base;}
+.banner2,.banner4{background-color:@bg-base-darker;}
+.btn-s1{background-color:@btn-bg-base;}
+a.link-base,a.link-base:hover,a.link-base:focus{color:@btn-bg-base;}
+a.link-base:hover{text-decoration: underline;}
+.btn-s1.disabled,.btn-s2.disabled,.btn-s3.disabled{background-color:@btn-bg-dis;}
+.modal-footer{border-top-color:transparent; padding: 15px 40px 20px;}
+/*} Cover bootstrap's style */
+
+
+/*Created new & Cover half style {*/
+.link-base{color:#333;}
+.link-base2{color:#8c8c8c;}
+.link-base3{color:#0ea7ff;
+  &:hover{text-decoration: underline;}
+}
+.link-base-hover{background:none; color:#ef2b2c; text-decoration: underline;}
+.head-link>li>a,.foot-links>a,.form-signin-link1,.form-signin-link2,.link-s2{
+  .link-base;
+  &:hover{
+    .link-base-hover;
+  }
+}
+.link-s1{
+  .link-base2;
+  &:hover{
+    .link-base-hover;
+  }
+}
+
+.rounded-corners (@radius: 50%) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.form-signin-link1:after {
+  .rounded-corners;
+}
+.btn-normal,.index-box-in1,.back-to-top-btn,.qr-code-btn,.login-box,.content-box-s1,.binding-neea-tips-box,.succeed-redirect-box,.content-box-s3,.choose-TP-page-left,.choose-TP-page-right,.ExamChooseTag,.ExamChooseBtn,.choose-RH-item,.btn-single-1,.popBox{
+  .rounded-corners(4px);
+}
+.btn-close,.AlChItemOuter,.AlChItemDel{
+  .rounded-corners(2px);
+}
+.AlChSubmit,.choose-RT-btn{
+  .rounded-corners(15px);
+}
+
+.title-icon(@f-size:16px;){font-size:@f-size;content:"\007c"; font-weight: bold; vertical-align: top; padding-right: 12px;}
+.index-box-title:before{.title-icon;}
+.choose-TP-title:before{.title-icon(18px);}
+.form-signin-heading:before{.title-icon(22px);}
+
+.copyScroll{overflow-y: auto;}
+.copyScroll::-webkit-scrollbar,.sidebar-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+.copyScroll::-webkit-scrollbar-thumb,.sidebar-list::-webkit-scrollbar-thumb {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.3)
+}
+.copyScroll::-webkit-scrollbar-thumb:active,.copyScroll::-webkit-scrollbar-thumb:hover,.sidebar-list::-webkit-scrollbar-thumb:active,.sidebar-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,.7)
+}
+.copyScroll::-webkit-scrollbar-button,.sidebar-list::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none
+}
+.copyScroll::-webkit-scrollbar-corner,.sidebar-list::-webkit-scrollbar-corner {
+  background-color: transparent
+}
+/*} Created new & Cover half style  */
+

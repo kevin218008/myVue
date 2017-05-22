@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>首页</title>
+    <!--<link rel="stylesheet" href="../pages/content-web/css/style.css">-->
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+</head>
+<body >
+<div id="app" v-cloak>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- logo {-->
+                    <a class="navbar-brand logo" href="#"></a>
+                    <!--} logo -->
+                </div>
+                <div class="navbar-collapse collapse">
+                    <!-- 导航项 {-->
+                    <ul class="nav navbar-nav head-nav">
+                        <!--当前导航 li上增加样式名  class="active" -->
+                        <li><router-link to="/Registration-home" ><em class="navIcon2"></em>抢考位</router-link></li>
+                        <li><router-link to="/CheckScores-guide-page" title="查出分"><em class="navIcon3"></em>查出分</router-link></li>
+                        <li><router-link to="/Examination-room-home" title="看考场"><em class="navIcon4"></em>看考场</router-link></li>
+                        <li><router-link to="/Help-home" title="问问"><em class="navIcon5"></em>问问</router-link></li>
+                        <li><router-link to="/Register-1" title="代注册"><em class="navIcon7"></em>代注册</router-link></li>
+                    </ul>
+                    <!--} 导航项 -->
+
+                    <!-- 登录与登录后 {-->
+                    <ul class="nav navbar-nav navbar-right head-link">
+                        <!--登录前 {-->
+                        <li><img src="/qkwVue/outFile/static/resource/images/icon_bg2_1.551d92f70d1d1caefb501e7407038a45.png" class="img-circle"><router-link to="/login&register">登录</router-link>/<router-link to="login&register">注册</router-link></li>
+                        <!--注：1、圆角头像需要再img标签跟随样式 img-circle；
+                               2、默认头像（目前没有上传头像功能）登录后img的src地址变为 icon_bg2_2.png -->
+                        <!--} 登录前 -->
+                        <!--登录后  推测结果，需要UI确认 {-->
+                        <li style="display: none;"><img src="/qkwVue/outFile/static/resource/images/icon_bg2_1.551d92f70d1d1caefb501e7407038a45.png" class="img-circle"><a href="User-center.html">个人中心</a>/<a href="#">注销</a></li>
+                        <!--} 登录后 -->
+                    </ul>
+                    <!--} 登录与登录后 -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <router-view>   </router-view>
+    <ol>
+        <my-item v-for="x in myList" v-bind:td="x"></my-item>
+    </ol>
+</div>
+
+<!--<div >-->
+
+    <!--<router-link to="/page2" >Go to page2</router-link>-->
+    <!--<router-view></router-view>-->
+<!--</div>-->
+
+<script type="text/javascript" src="/qkwVue/outFile/static/common.bundle.d41d8cd98f00b204e980.js"></script><script type="text/javascript" src="/qkwVue/outFile/static/app.bundle.4efdcb484c87defe80c5.js"></script></body>
+</html>

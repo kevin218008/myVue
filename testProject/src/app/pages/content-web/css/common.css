@@ -1,0 +1,186 @@
+@charset "utf-8";
+/*Definition value {*/
+/*} Definition value */
+/*Cover bootstrap's style {*/
+body,
+input,
+textarea,
+select,
+option,
+button {
+  font-family: "Microsoft YaHei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+body {
+  background-color: #f5f5f5;
+}
+.navbar,
+.index-box {
+  background-color: #fff;
+}
+.banner2,
+.banner4 {
+  background-color: #f5f5f5;
+}
+.btn-s1 {
+  background-color: #ef2b2c;
+}
+a.link-base,
+a.link-base:hover,
+a.link-base:focus {
+  color: #ef2b2c;
+}
+a.link-base:hover {
+  text-decoration: underline;
+}
+.btn-s1.disabled,
+.btn-s2.disabled,
+.btn-s3.disabled {
+  background-color: #b3c7cd;
+}
+.modal-footer {
+  border-top-color: transparent;
+  padding: 15px 40px 20px;
+}
+/*} Cover bootstrap's style */
+/*Created new & Cover half style {*/
+.link-base {
+  color: #333;
+}
+.link-base2 {
+  color: #8c8c8c;
+}
+.link-base3 {
+  color: #0ea7ff;
+}
+.link-base3:hover {
+  text-decoration: underline;
+}
+.link-base-hover {
+  background: none;
+  color: #ef2b2c;
+  text-decoration: underline;
+}
+.head-link > li > a,
+.foot-links > a,
+.form-signin-link1,
+.form-signin-link2,
+.link-s2 {
+  color: #333;
+}
+.head-link > li > a:hover,
+.foot-links > a:hover,
+.form-signin-link1:hover,
+.form-signin-link2:hover,
+.link-s2:hover {
+  background: none;
+  color: #ef2b2c;
+  text-decoration: underline;
+}
+.link-s1 {
+  color: #8c8c8c;
+}
+.link-s1:hover {
+  background: none;
+  color: #ef2b2c;
+  text-decoration: underline;
+}
+.form-signin-link1:after {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.btn-normal,
+.index-box-in1,
+.back-to-top-btn,
+.qr-code-btn,
+.login-box,
+.content-box-s1,
+.binding-neea-tips-box,
+.succeed-redirect-box,
+.content-box-s3,
+.choose-TP-page-left,
+.choose-TP-page-right,
+.ExamChooseTag,
+.ExamChooseBtn,
+.choose-RH-item,
+.btn-single-1,
+.popBox {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn-close,
+.AlChItemOuter,
+.AlChItemDel {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.AlChSubmit,
+.choose-RT-btn {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+}
+.index-box-title:before {
+  font-size: 16px;
+  content: "\007c";
+  font-weight: bold;
+  vertical-align: top;
+  padding-right: 12px;
+}
+.choose-TP-title:before {
+  font-size: 18px;
+  content: "\007c";
+  font-weight: bold;
+  vertical-align: top;
+  padding-right: 12px;
+}
+.form-signin-heading:before {
+  font-size: 22px;
+  content: "\007c";
+  font-weight: bold;
+  vertical-align: top;
+  padding-right: 12px;
+}
+.copyScroll {
+  overflow-y: auto;
+}
+.copyScroll::-webkit-scrollbar,
+.sidebar-list::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.copyScroll::-webkit-scrollbar-thumb,
+.sidebar-list::-webkit-scrollbar-thumb {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.copyScroll::-webkit-scrollbar-thumb:active,
+.copyScroll::-webkit-scrollbar-thumb:hover,
+.sidebar-list::-webkit-scrollbar-thumb:active,
+.sidebar-list::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.copyScroll::-webkit-scrollbar-button,
+.sidebar-list::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+.copyScroll::-webkit-scrollbar-corner,
+.sidebar-list::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+/*} Created new & Cover half style  */
